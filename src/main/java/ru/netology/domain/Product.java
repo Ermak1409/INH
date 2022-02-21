@@ -16,6 +16,7 @@ public class Product {
     private int id;
     private String nameProduct;
     private int price;
+    private String name;
 
 
     @Override

@@ -13,12 +13,11 @@ import java.util.Objects;
 
 
 public class Book extends Product {
-    private String nameBook;
+
     private String author;
 
-    public Book(int id, String nameProduct, int price, String nameBook, String author) {
-        super(id, nameProduct, price);
-        this.nameBook = nameBook;
+    public Book(int id, String nameProduct, int price, String name, String author) {
+        super(id, nameProduct, price, name);
         this.author = author;
     }
 
@@ -29,6 +28,11 @@ public class Book extends Product {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Book book = (Book) o;
-        return Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
+        return Objects.equals(author, book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(author);
     }
 }

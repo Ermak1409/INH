@@ -11,13 +11,12 @@ import java.util.Objects;
 @Data
 
 public class Smartphone extends Product {
-    private String nameSmartphone;
+
     private String manufacturer;
 
-    public Smartphone(int id, String nameProduct, int price, String nameSmartphone, String manufacturer) {
-        super(id, nameProduct, price);
-        this.nameSmartphone = nameSmartphone;
-        this.manufacturer = manufacturer;
+    public Smartphone(int id, String nameProduct, int price, String name, String manufacturer) {
+        super(id, nameProduct, price, name);
+                this.manufacturer = manufacturer;
     }
 
     @Override
@@ -26,7 +25,7 @@ public class Smartphone extends Product {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Smartphone that = (Smartphone) o;
-        return Objects.equals(nameSmartphone, that.nameSmartphone) && Objects.equals(manufacturer, that.manufacturer);
+        return Objects.equals(manufacturer, that.manufacturer);
     }
 
 }
