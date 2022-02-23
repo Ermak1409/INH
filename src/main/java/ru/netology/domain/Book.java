@@ -16,8 +16,8 @@ public class Book extends Product {
 
     private String author;
 
-    public Book(int id, String nameProduct, int price, String name, String author) {
-        super(id, nameProduct, price, name);
+    public Book(int id, String nameProduct, int price, String author) {
+        super(id, nameProduct, price);
         this.author = author;
     }
 

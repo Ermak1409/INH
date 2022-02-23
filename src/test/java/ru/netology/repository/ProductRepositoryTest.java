@@ -10,12 +10,12 @@ class ProductRepositoryTest {
     private ProductRepository repository = new ProductRepository();
 
 
-    private Book first = new Book(1, "Книга", 200, "Алиса", "Керрол");
-    private Smartphone second = new Smartphone(2, "Смартфон", 20000, "S30", "Samsung");
-    private Book third = new Book(3, "Книга", 250, "Война и мир", "Толстой");
-    private Smartphone fourth = new Smartphone(4, "Смартфон", 15000, "Redmi", "Xiaomi");
-    private Book fifth = new Book(5, "Книга", 220, "Мертвые души", "Гоголь");
-    private Smartphone sixth = new Smartphone(6, "Смартфон", 18000, "Blade 20", "ZTE");
+    private Book first = new Book(1, "Книга Тарас Бульба", 200, "Гоголь");
+    private Smartphone second = new Smartphone(2, "Смартфон S30", 20000, "Samsung");
+    private Book third = new Book(3, "Книга Война и мир", 250, "Толстой");
+    private Smartphone fourth = new Smartphone(4, "Смартфон Redmi", 20000, "Xiaomi");
+    private Book fifth = new Book(5, "Книга Мертвые души", 220, "Гоголь");
+    private Smartphone sixth = new Smartphone(6, "Смартфон Blade 20", 18000, "ZTE");
 
     @Test
     void save2() {
